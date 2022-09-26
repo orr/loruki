@@ -367,4 +367,31 @@ ul {
     margin-right: 1rem;
 }
 
+@media (max-width: 1100px) {
+    .hero .main-hero {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+} 
+
+@media only screen and (max-width: 768px) {
+    .hero .main-hero {
+        flex-direction: column;
+    }
+    .hero .main-hero .deployment {
+        padding-top: 3rem;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 578px) {
+
+}
+
+
+
+
 
