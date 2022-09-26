@@ -13,6 +13,7 @@
     --primary-bg-white: #fff;
     --tertiary-color: #b4becb;
     --alternative-color: #1c3fa8;
+    --footer-bg-color: #002240;
 }
 
 body {
@@ -298,7 +299,72 @@ ul {
     font-size: 1.25rem;
     
 }
-
 .cloud .cloud-content img {
     height: 300px;
 }
+
+.languages {
+    width: 100%;
+    background-color: var(--primary-bg-white);
+}
+.languages .languages-content {
+    color: var(--secondary-color);
+}
+.languages .languages-content h1{
+    text-align: center;
+    margin: 1.5rem 0 3rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.languages .languages-content .languages-cards {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+.languages .languages-content .languages-cards .language-card {
+    padding: 1rem 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all ease 300ms;
+}
+.languages .languages-content .languages-cards .language-card:hover {
+    transform: translateY(-20px);
+}
+.languages .languages-content .languages-cards .language-card p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.languages .languages-content .languages-cards .language-card img {
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--footer-bg-color);
+    color: var(--primary-color);
+}
+.footer .footer-content {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.footer .footer-content .loruki h1 {
+    font-size: 2.rem;
+    font-weight: 300;
+}
+
+.footer .footer-content .loruki nav a {
+    font-size: 1.2rem;
+}
+.footer .footer-content .social i {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+
